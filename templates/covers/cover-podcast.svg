@@ -2,28 +2,33 @@
      width="3000" height="3000" viewBox="0 0 3000 3000">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="{{PRIMARY}}" stop-opacity="0.12"/>
+      <stop offset="0%" stop-color="#f8f9fb"/>
+      <stop offset="100%" stop-color="{{PRIMARY}}" stop-opacity="0.10"/>
     </linearGradient>
   </defs>
 
-  <rect width="3000" height="3000" fill="#fafafa"/>
+  <rect width="3000" height="3000" fill="#ffffff"/>
   <rect width="3000" height="3000" fill="url(#bgGrad)"/>
 
   <!-- 中央大图标 -->
-  <image x="900" y="720" width="1200" height="1200"
+  <image x="840" y="660" width="1320" height="1320"
          xlink:href="{{ICON_PNG}}" preserveAspectRatio="xMidYMid meet"/>
 
   <!-- 标题：图标下方 -->
-  <text x="1500" y="2140" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="140" font-weight="bold" fill="#1e1e1e">
+  <text x="1500" y="2100" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="{{TITLE_SIZE}}" font-weight="bold" fill="#1a1a1a">
     {{TITLE}}
   </text>
 
+  <!-- 副标题 -->
+  <text x="1500" y="2200" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="{{SUBTITLE_SIZE}}" font-weight="normal" fill="#333333" opacity="0.90">
+    {{SUBTITLE}}
+  </text>
+
   <!-- 底部装饰圆环（淡） -->
-  <circle cx="1500" cy="1500" r="1350" fill="none" stroke="{{PRIMARY}}" stroke-width="12" opacity="0.04"/>
+  <circle cx="1500" cy="1500" r="1380" fill="none" stroke="{{PRIMARY}}" stroke-width="14" opacity="0.04"/>
 
   <!-- 底部 wenpai logo 居中 -->
-  <image x="1200" y="2700" width="600" height="210"
+  <image x="1080" y="2640" width="840" height="297"
          xlink:href="{{WENPAI_LOGO_PNG}}" preserveAspectRatio="xMidYMid meet"
-         opacity="0.75"/>
+         opacity="0.80"/>
 </svg>

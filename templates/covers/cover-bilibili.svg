@@ -2,25 +2,29 @@
      width="1146" height="717" viewBox="0 0 1146 717">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="0%" stop-color="#f8f9fb"/>
       <stop offset="100%" stop-color="{{PRIMARY}}" stop-opacity="0.10"/>
     </linearGradient>
   </defs>
 
-  <rect width="1146" height="717" fill="#fafafa"/>
+  <rect width="1146" height="717" fill="#ffffff"/>
   <rect width="1146" height="717" fill="url(#bgGrad)"/>
 
-  <text x="55" y="240" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="68" font-weight="bold" fill="#1e1e1e">
+  <text x="55" y="260" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="{{TITLE_SIZE}}" font-weight="bold" fill="#1a1a1a">
     {{TITLE}}
   </text>
 
-  <image x="720" y="160" width="340" height="340"
+  <text x="60" y="305" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="{{SUBTITLE_SIZE}}" font-weight="normal" fill="#333333" opacity="0.90">
+    {{SUBTITLE}}
+  </text>
+
+  <image x="710" y="150" width="380" height="380"
          xlink:href="{{ICON_PNG}}" preserveAspectRatio="xMidYMid meet"/>
 
-  <path d="M 0,600 Q 573,560 1146,600 L 1146,717 L 0,717 Z"
-        fill="{{PRIMARY}}" opacity="0.04"/>
+  <path d="M 0,580 Q 573,540 1146,580 L 1146,717 L 0,717 Z"
+        fill="{{PRIMARY}}" opacity="0.03"/>
 
-  <image x="55" y="640" width="95" height="33"
+  <image x="55" y="640" width="140" height="49"
          xlink:href="{{WENPAI_LOGO_PNG}}" preserveAspectRatio="xMidYMid meet"
-         opacity="0.75"/>
+         opacity="0.80"/>
 </svg>

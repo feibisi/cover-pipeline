@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="{{PRIMARY}}" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#fafafa"/>
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+  <text x="90" y="380" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="120" font-weight="bold" fill="#1e1e1e">
+    {{TITLE}}
+  </text>
+
+  <image x="1260" y="270" width="540" height="540"
+         xlink:href="{{ICON_PNG}}" preserveAspectRatio="xMidYMid meet"/>
+
+  <path d="M 0,900 Q 960,840 1920,900 L 1920,1080 L 0,1080 Z"
+        fill="{{PRIMARY}}" opacity="0.04"/>
+
+  <image x="90" y="980" width="144" height="50"
+         xlink:href="{{WENPAI_LOGO_PNG}}" preserveAspectRatio="xMidYMid meet"
+         opacity="0.75"/>
+</svg>

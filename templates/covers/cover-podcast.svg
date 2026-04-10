@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3000" height="3000" viewBox="0 0 3000 3000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="{{PRIMARY}}" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="3000" height="3000" fill="#fafafa"/>
+  <rect width="3000" height="3000" fill="url(#bgGrad)"/>
+
+  <!-- 中央大图标 -->
+  <image x="900" y="720" width="1200" height="1200"
+         xlink:href="{{ICON_PNG}}" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 标题：图标下方 -->
+  <text x="1500" y="2140" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="140" font-weight="bold" fill="#1e1e1e">
+    {{TITLE}}
+  </text>
+
+  <!-- 底部装饰圆环（淡） -->
+  <circle cx="1500" cy="1500" r="1350" fill="none" stroke="{{PRIMARY}}" stroke-width="12" opacity="0.04"/>
+
+  <!-- 底部 wenpai logo 居中 -->
+  <image x="1200" y="2700" width="600" height="210"
+         xlink:href="{{WENPAI_LOGO_PNG}}" preserveAspectRatio="xMidYMid meet"
+         opacity="0.75"/>
+</svg>

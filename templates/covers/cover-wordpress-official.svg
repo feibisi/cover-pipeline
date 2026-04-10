@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- WordPress 官方风格鲜明对角渐变 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{{PRIMARY}}" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#1e1e1e" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+  <!-- 左侧大标题：缩小字号并预留安全区，避免与右侧图标重叠 -->
+  <text x="100" y="360" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="110" font-weight="bold" fill="#ffffff">
+    {{TITLE}}
+  </text>
+
+  <!-- 可选副标题 / 标签行 -->
+  <text x="104" y="460" font-family="Noto Sans CJK SC, Noto Sans, sans-serif" font-size="48" font-weight="normal" fill="#ffffff" opacity="0.85">
+    {{SUBTITLE}}
+  </text>
+
+  <!-- 右侧图标：整体右移并缩小，与标题形成非对称平衡 -->
+  <image x="1460" y="280" width="420" height="420"
+         xlink:href="{{ICON_PNG}}" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- 左下角 wenpai logo -->
+  <image x="100" y="980" width="144" height="50"
+         xlink:href="{{WENPAI_LOGO_PNG}}" preserveAspectRatio="xMidYMid meet"
+         opacity="0.80"/>
+</svg>

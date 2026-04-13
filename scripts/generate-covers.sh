@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 TEMPLATE_DIR="$PROJECT_DIR/templates/covers"
 OUTPUT_DIR="$PROJECT_DIR/output/covers"
-WENPAI_LOGO_PNG="$(realpath "$PROJECT_DIR/assets/wenpai-logo.png")"
+WENPAI_LOGO_PNG="$(realpath "$PROJECT_DIR/assets/wenpai-logo.svg")"
 
 ICON_PATH=""
 TITLE=""
